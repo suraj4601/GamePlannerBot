@@ -2,7 +2,7 @@
 
 A specialized chatbot designed to help users plan and manage game tournaments. This chatbot uses Hugging Face's free API to provide domain-specific responses to tournament-related queries.
 
-![TournamentGenius Screenshot](gameplanerbot\public\images\screnshot.jpg)
+![TournamentGenius Screenshot](public\images\screnshot.jpg)
 
 ## Features
 
