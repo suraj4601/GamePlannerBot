@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tournament Planning Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <i class="fas fa-trophy"></i>
+          <span>TournamentGenius</span>
+        </div>
+      </div>
+      
+      <!-- Restored sidebar menu -->
+      <div class="sidebar-menu">
+        <h3>Areas of Focus</h3>
+        <ul>
+          <li><i class="fas fa-sitemap"></i> Tournament Formats</li>
+          <li><i class="fas fa-calendar-alt"></i> Scheduling</li>
+          <li><i class="fas fa-users"></i> Participant Management</li>
+          <li><i class="fas fa-gavel"></i> Rules & Scoring</li>
+          <li><i class="fas fa-map-marker-alt"></i> Venue Selection</li>
+          <li><i class="fas fa-award"></i> Prizes & Recognition</li>
+        </ul>
+      </div>
+      
+      <div class="sidebar-footer">
+        <p>Powered by <i class="fas fa-bolt"></i> Hugging Face</p>
+        <p>&copy; 2023 TournamentGenius</p>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="header">
+        <div class="header-content">
+          <i class="fas fa-robot header-icon"></i>
+          <div class="header-text">
+            <h1>Tournament Assistant</h1>
+            <p>Your AI planning partner</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Chat Container -->
+      <div class="chat-container">
+        <div id="chat-messages" class="chat-messages">
+          <div class="message bot">
+            <div class="message-header">
+              <div class="message-avatar">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="message-info">
+                <div class="message-sender">TournamentGenius</div>
+                <div class="message-time">Just now</div>
+              </div>
+            </div>
+            <div class="message-content">
+              <p>Hi there! I'm your Tournament Planning Assistant. I can help with organizing and managing tournaments of all types.</p>
+              <p>What would you like help with today?</p>
+              
+              <div class="suggestion-chips">
+                <span onclick="suggestQuery(this)">How do I organize a round-robin tournament?</span>
+                <span onclick="suggestQuery(this)">What's the best format for 12 teams?</span>
+                <span onclick="suggestQuery(this)">Help me create a schedule for a weekend tournament</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="input-container">
+          <textarea id="user-input" rows="1" placeholder="Ask about tournament planning..."></textarea>
+          <button id="send-btn">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+        
+        <div class="example-queries">
+          <p>Examples:</p>
+          <div class="suggestion-chips">
+            <span onclick="suggestQuery(this)">How do I seed players in a bracket?</span>
+            <span onclick="suggestQuery(this)">What equipment do I need for a chess tournament?</span>
+            <span onclick="suggestQuery(this)">Explain double elimination format</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
+
