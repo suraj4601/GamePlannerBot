@@ -2,13 +2,13 @@
 
 A specialized chatbot designed to help users plan and manage game tournaments. This chatbot uses Hugging Face's free API to provide domain-specific responses to tournament-related queries.
 
-![TournamentGenius Screenshot](public/images/screnshot.jpg)
+![TournamentGenius Screenshot](public/images/screenshot.jpg)
 
 ## Features
 
 - Beautiful, modern UI with animated components
 - Domain-specific responses for tournament planning and management
-- Support for various tournament formats and scheduling options
+- Support for various tournament formats and scheduling op  tions
 - Participant management guidance
 - Game-specific tournament rules information
 - Out-of-scope detection for non-tournament-related queries
@@ -58,4 +58,4 @@ Example queries:
 
 ## Screenshots
 
-Coming soon! 
+![Placeholder Screenshot](https://via.placeholder.com/800x400?text=Screenshot+Coming+Soon)
